@@ -85,20 +85,21 @@ $ ros2 topic pub -r 10 /Accel geometry_msgs/msg/Accel \
 
 HV 주행 파라미터는 src/hv_handler/config/hv_params.yaml 파일에서 관리된다.
 
+> ⚠️ 본 파일은 런타임에 로드된다.  
+> `colcon build --symlink-install` 옵션으로 빌드한 경우,  
+> YAML 파일 수정 후 **재빌드 없이 노드 재실행만으로** 변경 사항이 반영된다.
+
 - **`problem_two`, `problem_three`**  
-  시뮬레이션 문제 번호  
-  실행 시 선택된 문제에 따라 해당 블록이 활성화됨
+  시뮬레이션 문제 번호 실행 시 선택된 문제에 따라 해당 블록이 활성화됨
 
 - **`lane_three`, `lane_two`, `roundabout`**  
   HV가 주행하는 도로 환경 또는 경로 유형
 
 - **`init_speed` (m/s)**  
-  HV의 초기 주행 속도  
-  값이 클수록 공격적인 주행 특성
+  HV의 초기 주행 속도 값이 클수록 공격적인 주행 특성
 
 - **`lookahead` (`L_d`, m)**  
-  경로 추종 시 참조하는 전방 거리  
-  값이 클수록 부드럽고 완만한 주행
+  경로 추종 시 참조하는 전방 거리 값이 클수록 부드럽고 완만한 주행
 
 
 ---
