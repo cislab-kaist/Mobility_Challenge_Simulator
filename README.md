@@ -76,9 +76,12 @@ $ ros2 topic pub -r 10 /Accel geometry_msgs/msg/Accel \
                 y: 0.0, \
                 z: 0.0}}"
 ```
+  
+- **`LIN_VEL` (m/s)**  
+    차량 중심 속도 $v_x$
 
-- **LIN_VEL**: $v_x$, 차량 중심 속도
-- **ANG_VEL**: $\omega_z$, 차량 중심 각속도
+- **`ANG_VEL` (rad/s)**  
+    차량 중심 각속도 $\omega_z$
 
 
 ### 4. HV 주행 파라미터 설정
@@ -106,6 +109,6 @@ HV 주행 파라미터는 `src/hv_handler/config/hv_params.yaml` 파일에서 �
 
 - 📘 **시뮬레이터 매뉴얼**: 시뮬레이터 조작 방법, 토픽 구조, 사용 방법 등에 대한 상세 설명을 포함한다.
   
-  [매뉴얼 다운로드](https://drive.google.com/file/d/1koGnXS7wrxP_pSGpCxh8SZqol4rqMsX-/view?usp=sharing)
+  [매뉴얼 다운로드](https://drive.google.com/drive/folders/18i4JVSah0wi0DM1WJ_bzrPLkgHcR89dE?usp=sharing)
 
 
